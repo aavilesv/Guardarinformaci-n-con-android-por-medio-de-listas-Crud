@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevoAuto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:background="?attr/colorPrimary"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004"
+
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/Theme.AppCompat.Light"
+        app:title="@string/app_name"/>
+
+    <EditText
+        android:id="@+id/txttmodelo"
+        android:layout_width="329dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+
+        android:hint="Modelo"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivphoto"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txttnumasien"
+        android:layout_width="317dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+
+        android:hint="Numeros de Asientos"
+        android:inputType="number"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttfecha" />
+
+    <EditText
+        android:id="@+id/txttfecha"
+        android:layout_width="322dp"
+        android:layout_height="53dp"
+
+        android:layout_marginTop="12dp"
+        android:hint="Fecha"
+        android:inputType="date|number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttnew_used" />
+
+    <EditText
+        android:id="@+id/txttprecio"
+        style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+        android:layout_width="315dp"
+        android:layout_height="51dp"
+
+        android:layout_marginTop="44dp"
+        android:hint="Precio"
+        android:inputType="numberSigned"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttnumasien" />
+
+    <EditText
+        android:id="@+id/txttnew_used"
+
+
+        android:layout_width="330dp"
+        android:layout_height="53dp"
+
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Nuevo o usado"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttmodelo"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/ivphoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/foto02" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

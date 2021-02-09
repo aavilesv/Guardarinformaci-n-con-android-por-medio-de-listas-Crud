@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/txtid"
+        style="@android:style/Widget.TextView.SpinnerItem"
+        android:layout_width="184dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Modelo"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idhoto" />
+
+    <TextView
+        android:id="@+id/txtmodel"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="184dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="Mazda"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="16dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtid"
+        app:layout_constraintTop_toBottomOf="@+id/idhoto" />
+
+    <TextView
+        android:id="@+id/fgdf"
+        android:layout_width="176dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Precio"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasdas" />
+
+    <TextView
+        android:id="@+id/tasdas"
+        android:layout_width="181dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Numero de Asientos"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtid" />
+
+    <TextView
+        android:id="@+id/txtnumasient"
+        android:layout_width="174dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textSize="16dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tasdas"
+        app:layout_constraintTop_toBottomOf="@+id/txtmodel" />
+
+    <TextView
+        android:id="@+id/txtprecio"
+        android:layout_width="176dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textSize="16dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toEndOf="@+id/fgdf"
+        app:layout_constraintTop_toBottomOf="@+id/txtnumasient" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="175dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Nuevo o Usado"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fgdf" />
+
+    <TextView
+        android:id="@+id/txtnew_used"
+        android:layout_width="182dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textSize="16dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/txtprecio" />
+
+    <ImageView
+        android:id="@+id/idhoto"
+        android:layout_width="282dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/foto02" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
